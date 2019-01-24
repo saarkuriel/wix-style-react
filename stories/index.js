@@ -162,3 +162,13 @@ import './SegmentedToggle/testStory'; // 4.5 SegmentedToggle
 
 // The generated test component
 import './GeneratedTestComponent/index.story';
+
+// Deprecated
+import './Deprecated/Button/standard.story.js';
+import './Deprecated/IconWithOptions'; // IconWithOptions
+import './Deprecated/ButtonWithOptions'; // ButtonWithOptions
+import './ButtonLayout.story.js'; // 5.0 ButtonLayout
+import './TextLink/index.story.js'; // 5.8 Text Link
+
+// This import was added by the component generator
+import './FloatingNotification/index.story';

@@ -402,3 +402,9 @@ import { segmentedToggleDriverFactory } from '../src/SegmentedToggle/SegmentedTo
 export const segmentedToggleTestkitFactory = protractorUniTestkitFactoryCreator(
   segmentedToggleDriverFactory,
 );
+
+import { floatingNotificationDriverFactory } from '../src/FloatingNotification/FloatingNotification.driver';
+
+export const floatingNotificationTestkitFactory = protractorUniTestkitFactoryCreator(
+  floatingNotificationDriverFactory,
+);
