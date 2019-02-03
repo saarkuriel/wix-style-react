@@ -117,7 +117,6 @@ export const segmentedToggleTestkitFactory = puppeteerUniTestkitFactoryCreator(
   segmentedToggleDriverFactory,
 );
 
-
 import { floatingNotificationDriverFactory } from '../src/FloatingNotification/FloatingNotification.driver';
 
 export const floatingNotificationTestkitFactory = puppeteerUniTestkitFactoryCreator(

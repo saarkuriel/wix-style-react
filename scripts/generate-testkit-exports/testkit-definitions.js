@@ -227,6 +227,8 @@ module.exports = {
 
   Notification: {},
 
+  FloatingNotification: { unidriver, drivers: ['enzyme'] },
+
   DatePicker: {
     skipSanityTest, // testkit does not have root `exists` method
   },
