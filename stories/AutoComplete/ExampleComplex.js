@@ -60,7 +60,7 @@ class ControlledAutoComplete extends React.Component {
         onEscapePressed={this.onEscapePressed}
         onKeyDown={this.onKeyDown}
         predicate={predicate}
-        emptyStateMessage="Empty state"
+        emptyStateMessage={`No such option: ${this.state.value}`}
       />
     );
   }
