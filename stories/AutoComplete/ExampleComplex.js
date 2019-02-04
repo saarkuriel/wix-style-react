@@ -35,13 +35,23 @@ class ControlledAutoComplete extends React.Component {
 
   render() {
     console.log('@@@@@@@@@@', this.state.suggestions);
+
+    const predicate = o => {
+      return (
+        o.value
+          .toString()
+          .toLowerCase()
+          .indexOf(this.state.value.toLowerCase()) > -1
+      );
+    };
+
     return (
       <AutoComplete
         ref="title"
         value={this.state.title}
         placeholder={'Place holder'}
         autoSelect
-        options={this.state.suggestions}
+        options={options}
         onSelect={this.onSet}
         onManuallyInput={this.onManuallyInput}
         onBlur={this.onBlur}
@@ -49,6 +59,8 @@ class ControlledAutoComplete extends React.Component {
         onChange={this.onChange}
         onEscapePressed={this.onEscapePressed}
         onKeyDown={this.onKeyDown}
+        predicate={predicate}
+        emptyStateMessage="Empty state"
       />
     );
   }
@@ -57,17 +69,9 @@ class ControlledAutoComplete extends React.Component {
   // onSet -> onSelect
 
   onChange(e) {
-    console.log('>> Change!', e.target.value);
-    const value = e.target.value;
-    this.setState({
-      suggestions: options.filter(
-        o =>
-          o.value
-            .toString()
-            .toLowerCase()
-            .indexOf(value.toLowerCase()) > -1,
-      ),
-    });
+    const { value } = e.target;
+    console.log('>> Change!', value);
+    this.setState({ value });
   }
 
   onSet(e) {
