@@ -116,3 +116,9 @@ import { segmentedToggleDriverFactory } from '../src/SegmentedToggle/SegmentedTo
 export const segmentedToggleTestkitFactory = puppeteerUniTestkitFactoryCreator(
   segmentedToggleDriverFactory,
 );
+
+import { colorInputDriverFactory } from '../src/ColorInput/ColorInput.driver';
+
+export const colorInputTestkitFactory = puppeteerUniTestkitFactoryCreator(
+  colorInputDriverFactory,
+);

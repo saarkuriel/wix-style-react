@@ -402,3 +402,9 @@ import { segmentedToggleDriverFactory } from '../src/SegmentedToggle/SegmentedTo
 export const segmentedToggleTestkitFactory = protractorUniTestkitFactoryCreator(
   segmentedToggleDriverFactory,
 );
+
+import { colorInputDriverFactory } from '../src/ColorInput/ColorInput.driver';
+
+export const colorInputTestkitFactory = protractorUniTestkitFactoryCreator(
+  colorInputDriverFactory,
+);

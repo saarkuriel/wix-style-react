@@ -262,4 +262,6 @@ module.exports = {
     testkitPath: '../src/SegmentedToggle/SegmentedToggle.driver',
     unidriver,
   },
+
+  ColorInput: { testkitPath: '../src/ColorInput/ColorInput.driver', unidriver },
 };
