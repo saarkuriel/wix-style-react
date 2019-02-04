@@ -34,7 +34,7 @@ describe('PopoverMenu', () => {
 
   async function getPageWithDividerMenu({ rtl } = {}) {
     const storyUrl = createStoryUrl({
-      kind: '7. Tooltips',
+      kind: Category.TOOLTIP_AND_POPOVER,
       story: '7.3 Popover Menu',
       withExamples: true,
       rtl,
