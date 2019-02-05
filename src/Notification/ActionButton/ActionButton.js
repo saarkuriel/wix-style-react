@@ -23,7 +23,7 @@ const ActionButton = ({ children, onClick, type, link }) => {
     );
   } else {
     return (
-      <Button as="button" size="small" skin="transparent" {...commonProps}>
+      <Button size="small" skin="transparent" {...commonProps}>
         {children}
       </Button>
     );
