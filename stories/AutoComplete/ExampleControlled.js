@@ -45,6 +45,7 @@ class ControlledAutoComplete extends React.Component {
           option.value.toLowerCase().indexOf(this.state.value.toLowerCase()) !==
           -1
         }
+        emptyStateMessage={`Couldn't find: ${this.state.value}`}
       />
     );
   }
